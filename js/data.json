@@ -1,0 +1,26 @@
+[{
+  "rsvpCode": "vicks364",
+  "first": "Sam",
+  "last": "Vickars",
+  "guests": "TRUE"
+}, {
+  "rsvpCode": "taylm302",
+  "first": "Meghan",
+  "last": "Taylor",
+  "guests": "FALSE"
+}, {
+  "rsvpCode": "vicki812",
+  "first": "Iain",
+  "last": "Vickars",
+  "guests": "TRUE"
+}, {
+  "rsvpCode": "vickm488",
+  "first": "Mark",
+  "last": "Vickars",
+  "guests": "FALSE"
+}, {
+  "rsvpCode": "vickl727",
+  "first": "Lesley",
+  "last": "Vickars",
+  "guests": "FALSE"
+}]

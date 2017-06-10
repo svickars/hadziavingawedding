@@ -1,0 +1,123 @@
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.centerContainer {
+  position: absolute;
+  left: 50%;
+  width: 375px;
+  height: 500px;
+  padding: 3em 0 0 0;
+
+  text-align: center;
+
+  border: 10px solid purple;
+
+  -ms-transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 7em;
+  line-height: 1.2em;
+  color: #228B22;
+}
+
+.divider {
+  z-index: -1;
+  position: absolute;
+  top: 4.25em;
+  left: 50%;
+
+  -ms-transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+#amp {
+  color: purple;
+  font-family: 'Playfair Display', serif;
+  font-size: 10em;
+}
+
+.deets {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: .75;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.btn-default {
+  font-family: 'Roboto', sans-serif;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 250px;
+  background-color: #228B22;
+  border: none;
+  border-radius: 1px;
+  color: white;
+}
+
+.btn-default:hover {
+  opacity: .75;
+  color: white;
+  background-color: #228B22;
+}
+
+.btn-default:focus {
+  /*opacity: 1;*/
+  color: white;
+  background-color: #228B22;
+  border: none;
+  outline: none;
+}
+
+.instructions {
+  width: 100%;
+  padding: 10px 50px 0 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: .5;
+  color: purple;
+}
+
+.instructions2 {
+  width: 100%;
+  padding: 0px 50px 0 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 1;
+  font-weight: 700;
+  color: red;
+}
+
+input {
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid purple;
+}
