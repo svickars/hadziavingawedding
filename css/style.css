@@ -24,6 +24,7 @@ body {
   /* border: 3px solid #2b583d; */
   background-image: url("/img/webBG@2x.png");
   background-size: 375px 500px;
+  background-repeat: no-repeat;
 
   -ms-transform: translate(-50%);
   -webkit-transform: translate(-50%);
