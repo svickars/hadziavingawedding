@@ -5,7 +5,7 @@ var allNames = [],
 // data begin
 
 var data = [{
-    "rsvpCode": "VICKL805",
+    "rsvpCode": "TESTS002",
     "guest1": "Lesley Vickars",
     "guest2": "Mark Vickars",
     "kids": "",
@@ -13,7 +13,7 @@ var data = [{
     "status": "couple"
   },
   {
-    "rsvpCode": "VICKS236",
+    "rsvpCode": "TESTS001",
     "guest1": "Sam Vickars",
     "guest2": "",
     "kids": "",
@@ -21,7 +21,7 @@ var data = [{
     "status": "ind"
   },
   {
-    "rsvpCode": "VICKJ206",
+    "rsvpCode": "TESTS003",
     "guest1": "Josh Vickars",
     "guest2": "Beata Vickars",
     "kids": 1,
