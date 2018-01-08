@@ -635,6 +635,30 @@ var data = [{
     "kids": "",
     "kidsNames": "",
     "status": "couple"
+  },
+  {
+    "rsvpCode": "TEST001",
+    "guest1": "Individual Guest",
+    "guest2": "",
+    "kids": "",
+    "kidsNames": "",
+    "status": "ind"
+  },
+  {
+    "rsvpCode": "TEST002",
+    "guest1": "Couple Guest",
+    "guest2": "Significant Other",
+    "kids": "",
+    "kidsNames": "",
+    "status": "couple"
+  },
+  {
+    "rsvpCode": "TEST003",
+    "guest1": "Family Guest",
+    "guest2": "Spouse Name",
+    "kids": "2",
+    "kidsNames": "Kid A, Kid B",
+    "status": "family"
   }
 ]
 // data end
