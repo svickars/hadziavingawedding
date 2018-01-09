@@ -58,7 +58,7 @@ var data = [{
     "guest2": "",
     "kids": "",
     "kidsNames": "",
-    "status": "plusOne"
+    "status": "couple"
   },
   {
     "rsvpCode": "VICKP412",
@@ -95,7 +95,7 @@ var data = [{
   {
     "rsvpCode": "NAYLC226",
     "guest1": "Duncan Naylor",
-    "guest2": "",
+    "guest2": "Cora Naylor",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
@@ -209,7 +209,7 @@ var data = [{
     "guest1": "Steve Naylor",
     "guest2": "Katherine Naylor",
     "kids": 2,
-    "kidsNames": "Aksel Naylor, Maddy Naylor",
+    "kidsNames": "Aksel Naylor, Madeline Naylor",
     "status": "family"
   },
   {
@@ -234,7 +234,7 @@ var data = [{
     "guest2": "",
     "kids": 2,
     "kidsNames": "Jacob Dennison, Esme Dennison",
-    "status": "family"
+    "status": "amy"
   },
   {
     "rsvpCode": "CUTEE698",
@@ -288,9 +288,9 @@ var data = [{
     "rsvpCode": "KLEIR430",
     "guest1": "Rhiannon Klein",
     "guest2": "Maciej Stetkiewicz",
-    "kids": "",
-    "kidsNames": "",
-    "status": "couple"
+    "kids": 1,
+    "kidsNames": "Beata",
+    "status": "family"
   },
   {
     "rsvpCode": "HADZM519",
@@ -306,7 +306,7 @@ var data = [{
     "guest2": "Milorad Vujicic",
     "kids": 2,
     "kidsNames": "BABY A, BABY B",
-    "status": "couple"
+    "status": "family"
   },
   {
     "rsvpCode": "SELJZ294",
@@ -607,7 +607,7 @@ var data = [{
   {
     "rsvpCode": "DESPM535",
     "guest1": "Michael  Despotovic",
-    "guest2": "",
+    "guest2": "Doaa Jamal",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
@@ -615,18 +615,10 @@ var data = [{
   {
     "rsvpCode": "VICKS217",
     "guest1": "Sydney Vickars",
-    "guest2": "",
+    "guest2": "Zlatko Hadziavdic",
     "kids": "",
     "kidsNames": "",
-    "status": ""
-  },
-  {
-    "rsvpCode": "HADZZ370",
-    "guest1": "Zlatko Hadziavdic",
-    "guest2": "",
-    "kids": "",
-    "kidsNames": "",
-    "status": ""
+    "status": "couple"
   },
   {
     "rsvpCode": "TRUSI263",
@@ -637,28 +629,12 @@ var data = [{
     "status": "couple"
   },
   {
-    "rsvpCode": "TEST001",
-    "guest1": "Individual Guest",
-    "guest2": "",
-    "kids": "",
-    "kidsNames": "",
-    "status": "ind"
-  },
-  {
-    "rsvpCode": "TEST002",
-    "guest1": "Couple Guest",
-    "guest2": "Significant Other",
+    "rsvpCode": "TRUSI263",
+    "guest1": "Gordan Truscott",
+    "guest2": "Isabelle Truscott",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
-  },
-  {
-    "rsvpCode": "TEST003",
-    "guest1": "Family Guest",
-    "guest2": "Spouse Name",
-    "kids": "2",
-    "kidsNames": "Kid A, Kid B",
-    "status": "family"
   }
 ]
 // data end
@@ -698,32 +674,36 @@ function rsvpBegin() {
             kids = data[i].kids;
             kidsNames = data[i].kidsNames;
             status = data[i].status;
-            console.log(status);
           }
         }
 
-        https: //docs.google.com/forms/d/e/1FAIpQLScphBnHhJLUFqsTiBMGSYRTQSMmrYstSPSzBngUi8o0-R1MfQ/viewform?usp=sf_link
+        $(".centerContainer").css("background", "none")
 
-          if (allNames.includes(code) === false) {
-            $(".instructions2").html("That doesn't look right. Give it another go.");
-          } else {
-            $(".instructions2").html("");
-            if (status === "ind") {
-              $(".centerContainer").fadeOut(function() {
-                $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLSf8LHHYH3NXVuopbSyi_71bWocmZR6nX546bKHF_dWp0vu2Pg/viewform?embedded=true&usp=pp_url&entry.1651278538=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855&entry.307816897&entry.1150828673&entry.1688124554&entry.603971525&entry.1654011779&entry.1224320764&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
-              }).fadeIn();
-            }
-            if (status === "couple") {
-              $(".centerContainer").fadeOut(function() {
-                $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLScphBnHhJLUFqsTiBMGSYRTQSMmrYstSPSzBngUi8o0-R1MfQ/viewform?usp=pp_url&entry.1620511179=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855=' + guest2 + '&entry.307816897&entry.1150828673&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
-              }).fadeIn();
-            }
-            if (status === "family") {
-              $(".centerContainer").fadeOut(function() {
-                $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLSdntdcJVHxXfSwkfMFO3q7-5wqNxInQX_L78_KKmJKe0bnGvA/viewform?usp=pp_url&entry.1620511179=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855=' + guest2 + '&entry.1062255074=' + kids + '&entry.1069086486=' + kidsNames + '&entry.307816897&entry.1150828673&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
-              }).fadeIn();
-            }
+        if (allNames.includes(code) === false) {
+          $(".instructions2").html("That doesn't look right. Give it another go.");
+        } else {
+          $(".instructions2").html("");
+          if (status === "ind") {
+            $(".centerContainer").fadeOut(function() {
+              $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLSf8LHHYH3NXVuopbSyi_71bWocmZR6nX546bKHF_dWp0vu2Pg/viewform?embedded=true&usp=pp_url&entry.1651278538=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855&entry.307816897&entry.1150828673&entry.1688124554&entry.603971525&entry.1654011779&entry.1224320764&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
+            }).fadeIn();
           }
+          if (status === "couple") {
+            $(".centerContainer").fadeOut(function() {
+              $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLScphBnHhJLUFqsTiBMGSYRTQSMmrYstSPSzBngUi8o0-R1MfQ/viewform?usp=pp_url&entry.1620511179=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855=' + guest2 + '&entry.307816897&entry.1150828673&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
+            }).fadeIn();
+          }
+          if (status === "family") {
+            $(".centerContainer").fadeOut(function() {
+              $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLSdntdcJVHxXfSwkfMFO3q7-5wqNxInQX_L78_KKmJKe0bnGvA/viewform?usp=pp_url&entry.1620511179=' + code + '&entry.1010062915=' + guest1 + '&entry.487716855=' + guest2 + '&entry.1062255074=' + kids + '&entry.1069086486=' + kidsNames + '&entry.307816897&entry.1150828673&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
+            }).fadeIn();
+          }
+          if (status === "amy") {
+            $(".centerContainer").fadeOut(function() {
+              $(this).css("border", "10px solid #b296c5").css("height", "750px").css("padding-top", "0").html('<iframe               src="https://docs.google.com/forms/d/e/1FAIpQLScriRV54CG7AJ4kf6tFeUsJdtYqEqRZT_84GWaaTPyOoVQyHQ/viewform?usp=pp_url&entry.1620511179=' + code + '&entry.1010062915=' + guest1 + '&entry.1062255074=' + kids + '&entry.1069086486=' + kidsNames + '&entry.307816897&entry.1150828673&entry.969733510" width="355" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
+            }).fadeIn();
+          }
+        }
       }
     });
   }).fadeIn();
