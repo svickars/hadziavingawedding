@@ -334,16 +334,16 @@ var data = [{
   },
   {
     "rsvpCode": "TUTNS890",
-    "guest1": "Seka Tutnjevic",
-    "guest2": "Neso Tutnjevic",
+    "guest1": "Nusreta Tutnjevic",
+    "guest2": "Nenad Tutnjevic",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
   },
   {
     "rsvpCode": "DZAFB649",
-    "guest1": "Beba Dzaferovic",
-    "guest2": "Miky Dzaferovic",
+    "guest1": "Fatima Dzaferovic",
+    "guest2": "Miralem Dzaferovic",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
@@ -616,14 +616,6 @@ var data = [{
     "rsvpCode": "VICKS217",
     "guest1": "Sydney Vickars",
     "guest2": "Zlatko Hadziavdic",
-    "kids": "",
-    "kidsNames": "",
-    "status": "couple"
-  },
-  {
-    "rsvpCode": "TRUSI263",
-    "guest1": "Gordan Truscott",
-    "guest2": "Isabelle Truscott",
     "kids": "",
     "kidsNames": "",
     "status": "couple"
